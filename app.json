@@ -1,0 +1,815 @@
+{
+	"id": "1c950c3b-2d35-4fd6-863f-9bc06fe0dce7",
+	"name": "天龙",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [],
+	"folders_order": [
+		"0f9646f7-d36d-462d-977a-cd51b346a31d",
+		"0a6e3147-9476-428e-a22e-a8329546d1c4",
+		"dc4c56f0-ea20-4639-9d28-4c8be66e0794"
+	],
+	"folders": [
+		{
+			"id": "6f6c0af9-c681-4025-a4eb-dcdd20ae7b99",
+			"name": "new",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "1c950c3b-2d35-4fd6-863f-9bc06fe0dce7",
+			"folder": "0a6e3147-9476-428e-a22e-a8329546d1c4",
+			"order": [
+				"46cf827e-61fc-47fb-aeb3-7d5b353553c6",
+				"a4603b7b-cc62-4bc9-b86d-4705a2702d3d",
+				"cf061534-b19c-44df-9c7d-87c118e55762",
+				"816d6b30-a1bc-403a-a165-1d6585da9ff9",
+				"518d80af-8be7-40be-878a-764cd655033c",
+				"1aa2e4e9-77ee-4e52-aee5-cb761ace4905"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "e515baee-fda3-40d7-a380-c0fb5279cab8",
+			"name": "old",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "1c950c3b-2d35-4fd6-863f-9bc06fe0dce7",
+			"folder": "0a6e3147-9476-428e-a22e-a8329546d1c4",
+			"order": [
+				"14a76e5b-f217-4d86-bd6e-2df99d864f0f",
+				"40351bf9-8304-467e-a67f-e032c038b5ea"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "0f9646f7-d36d-462d-977a-cd51b346a31d",
+			"name": "七夕",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "1c950c3b-2d35-4fd6-863f-9bc06fe0dce7",
+			"folder": null,
+			"order": [
+				"3dec61bd-beff-424f-8aef-03122ad0a269",
+				"a720bfd3-e4be-43fb-8ed5-92eb28d66951",
+				"cddd7a87-4d38-4f6e-be81-532e95a9f43b",
+				"debc4a72-54f8-4e92-9bda-ec06b08960b1",
+				"8b2ac546-1b08-46f9-9cd0-dc3d45dd8bcd",
+				"c5341b0c-2979-41c2-9eb0-597c7e40fbce",
+				"7b46fa56-3f92-4ae4-adc8-bffb82c58445",
+				"ce05610f-a47e-4a7c-b184-4966b9bc43f1"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "dc4c56f0-ea20-4639-9d28-4c8be66e0794",
+			"name": "天龙十月回流",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "1c950c3b-2d35-4fd6-863f-9bc06fe0dce7",
+			"folder": null,
+			"order": [
+				"0d22eb51-4085-4333-b8c1-7075341d5d6d",
+				"22194728-7e1e-4238-b143-c0ea5aadfd4a",
+				"907f4be3-ff1e-47da-b82c-d81b9fd1cbaa"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "0a6e3147-9476-428e-a22e-a8329546d1c4",
+			"name": "积分商城",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "1c950c3b-2d35-4fd6-863f-9bc06fe0dce7",
+			"folder": null,
+			"order": [],
+			"folders_order": [
+				"e515baee-fda3-40d7-a380-c0fb5279cab8",
+				"6f6c0af9-c681-4025-a4eb-dcdd20ae7b99"
+			]
+		}
+	],
+	"requests": [
+		{
+			"id": "0d22eb51-4085-4333-b8c1-7075341d5d6d",
+			"name": "抽奖",
+			"url": "http://join-activity.changyou.com/changyou/xtl/octReflux/lottery",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "APP",
+					"value": "xtl",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "ACTIVITY",
+					"value": "oct_reflux",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "VERSIONCODE",
+					"value": "20181001",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "dc4c56f0-ea20-4639-9d28-4c8be66e0794",
+			"headers": "APP: xtl\nACTIVITY: oct_reflux\nVERSIONCODE: 20181001\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "14a76e5b-f217-4d86-bd6e-2df99d864f0f",
+			"name": "兑换物品",
+			"url": "http://tlh5.changyou.com/tl/wxPoint/queryGoods4All.ncdo",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "e515baee-fda3-40d7-a380-c0fb5279cab8",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "1aa2e4e9-77ee-4e52-aee5-cb761ace4905",
+			"name": "兑换记录",
+			"url": "http://join-activity.changyou.com/wechat/xtl/wxPointMall/exchangeRecords",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "APP",
+					"value": "xtl",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "ACTIVITY",
+					"value": "tl_wxpoint_mall",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "VERSIONCODE",
+					"value": "20180910",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "User-Agent",
+					"value": "MicroMessenger",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "6f6c0af9-c681-4025-a4eb-dcdd20ae7b99",
+			"headers": "APP: xtl\nACTIVITY: tl_wxpoint_mall\nVERSIONCODE: 20180910\nUser-Agent: MicroMessenger\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "22194728-7e1e-4238-b143-c0ea5aadfd4a",
+			"name": "填充手机号",
+			"url": "http://join-activity.changyou.com/changyou/xtl/octReflux/savePhone?phone=13381144062",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "APP",
+					"value": "xtl",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "ACTIVITY",
+					"value": "oct_reflux",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "VERSIONCODE",
+					"value": "20181001",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "phone",
+					"value": "13381144062",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": [],
+			"folder": "dc4c56f0-ea20-4639-9d28-4c8be66e0794",
+			"headers": "APP: xtl\nACTIVITY: oct_reflux\nVERSIONCODE: 20181001\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "3dec61bd-beff-424f-8aef-03122ad0a269",
+			"name": "发送验证码",
+			"url": "http://tlh5.changyou.com/tl/qixi/sendCodeToTel.ncdo",
+			"description": "",
+			"data": [
+				{
+					"key": "telPhone",
+					"value": "13381144062",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "0f9646f7-d36d-462d-977a-cd51b346a31d",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "40351bf9-8304-467e-a67f-e032c038b5ea",
+			"name": "个人中心",
+			"url": "http://tlh5.changyou.com/tl/wxPoint/personInfo.ncdo?openId=oR8rRviSDvwUA68BxeW4BLN8lY6Q",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "openId",
+					"value": "oR8rRviSDvwUA68BxeW4BLN8lY6Q",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": [],
+			"folder": "e515baee-fda3-40d7-a380-c0fb5279cab8",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "46cf827e-61fc-47fb-aeb3-7d5b353553c6",
+			"name": "兑换物品",
+			"url": "http://join-activity.changyou.com/wechat/xtl/wxPointMall/goods/all",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "APP",
+					"value": "xtl",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "ACTIVITY",
+					"value": "tl_wxpoint_mall",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "VERSIONCODE",
+					"value": "20180910",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "User-Agent",
+					"value": "MicroMessenger",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "6f6c0af9-c681-4025-a4eb-dcdd20ae7b99",
+			"headers": "APP: xtl\nACTIVITY: tl_wxpoint_mall\nVERSIONCODE: 20180910\nUser-Agent: MicroMessenger\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "518d80af-8be7-40be-878a-764cd655033c",
+			"name": "修改地址",
+			"url": "http://join-activity.changyou.com/wechat/xtl/wxPointMall/submitReceiverInfo",
+			"description": "",
+			"data": [
+				{
+					"key": "addressee",
+					"value": "中国人",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "address",
+					"value": "中国",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone",
+					"value": "13381144062",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "APP",
+					"value": "xtl",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "ACTIVITY",
+					"value": "tl_wxpoint_mall",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "VERSIONCODE",
+					"value": "20180910",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "User-Agent",
+					"value": "MicroMessenger",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "6f6c0af9-c681-4025-a4eb-dcdd20ae7b99",
+			"headers": "APP: xtl\nACTIVITY: tl_wxpoint_mall\nVERSIONCODE: 20180910\nUser-Agent: MicroMessenger\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "7b46fa56-3f92-4ae4-adc8-bffb82c58445",
+			"name": "页面初始化",
+			"url": "http://tlh5.changyou.com/tl/qixi/initPage.ncdo",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "0f9646f7-d36d-462d-977a-cd51b346a31d",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "816d6b30-a1bc-403a-a165-1d6585da9ff9",
+			"name": "兑换",
+			"url": "http://join-activity.changyou.com/wechat/xtl/wxPointMall/exchangeGoods?goodsId=205",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "APP",
+					"value": "xtl",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "ACTIVITY",
+					"value": "tl_wxpoint_mall",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "VERSIONCODE",
+					"value": "20180910",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "User-Agent",
+					"value": "MicroMessenger",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "goodsId",
+					"value": "205",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": [],
+			"folder": "6f6c0af9-c681-4025-a4eb-dcdd20ae7b99",
+			"headers": "APP: xtl\nACTIVITY: tl_wxpoint_mall\nVERSIONCODE: 20180910\nUser-Agent: MicroMessenger\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "8b2ac546-1b08-46f9-9cd0-dc3d45dd8bcd",
+			"name": "参加报名",
+			"url": "http://tlh5.changyou.com/tl/qixi/saveInfo.ncdo",
+			"description": "",
+			"data": [
+				{
+					"key": "zone",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "server",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "telPhone",
+					"value": "13381144062",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "verifyCode",
+					"value": "342645",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "address",
+					"value": "addressaddre",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "mood",
+					"value": "的萨芬撒dfd的萨芬撒",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "img1",
+					"value": "http://static1.changyou.com/tl/newGroup/2016-08-05/3ea3ae4e-921b-49b8-a12d-7466ce164d86.jpeg",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "img2",
+					"value": "http://static1.changyou.com/tl/newGroup/2016-08-05/3ea3ae4e-921b-49b8-a12d-7466ce164d86.jpeg",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "img3",
+					"value": "157587686868delete",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "label",
+					"value": "love",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "groupCode",
+					"value": "111",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "roleGuid",
+					"value": "222",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "0f9646f7-d36d-462d-977a-cd51b346a31d",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "907f4be3-ff1e-47da-b82c-d81b9fd1cbaa",
+			"name": "抽奖资格",
+			"url": "http://join-activity.changyou.com/changyou/xtl/octReflux/right",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "APP",
+					"value": "xtl",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "ACTIVITY",
+					"value": "oct_reflux",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "VERSIONCODE",
+					"value": "20181001",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "dc4c56f0-ea20-4639-9d28-4c8be66e0794",
+			"headers": "APP: xtl\nACTIVITY: oct_reflux\nVERSIONCODE: 20181001\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a4603b7b-cc62-4bc9-b86d-4705a2702d3d",
+			"name": "个人中心",
+			"url": "http://join-activity.changyou.com/wechat/xtl/wxPointMall/personInfo",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "APP",
+					"value": "xtl",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "ACTIVITY",
+					"value": "tl_wxpoint_mall",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "VERSIONCODE",
+					"value": "20180910",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "User-Agent",
+					"value": "MicroMessenger",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "6f6c0af9-c681-4025-a4eb-dcdd20ae7b99",
+			"headers": "APP: xtl\nACTIVITY: tl_wxpoint_mall\nVERSIONCODE: 20180910\nUser-Agent: MicroMessenger\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a720bfd3-e4be-43fb-8ed5-92eb28d66951",
+			"name": "展示列表",
+			"url": "http://tlh5.changyou.com/tl/qixi/initShowList.ncdo",
+			"description": "",
+			"data": [
+				{
+					"key": "labelType",
+					"value": "charm",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "0f9646f7-d36d-462d-977a-cd51b346a31d",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "c5341b0c-2979-41c2-9eb0-597c7e40fbce",
+			"name": "详情展示",
+			"url": "http://tlh5.changyou.com/tl/qixi/showDetails.ncdo",
+			"description": "",
+			"data": [
+				{
+					"key": "to_id",
+					"value": "30",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "0f9646f7-d36d-462d-977a-cd51b346a31d",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "cddd7a87-4d38-4f6e-be81-532e95a9f43b",
+			"name": "点赞",
+			"url": "http://tlh5.changyou.com/tl/qixi/vote.ncdo?to_id=30",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "to_id",
+					"value": "30",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": [],
+			"folder": "0f9646f7-d36d-462d-977a-cd51b346a31d",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "ce05610f-a47e-4a7c-b184-4966b9bc43f1",
+			"name": "拉取用户账号信息",
+			"url": "http://tlh5.changyou.com/tl/qixi/pullUserInfo.ncdo",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "0f9646f7-d36d-462d-977a-cd51b346a31d",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "cf061534-b19c-44df-9c7d-87c118e55762",
+			"name": "兑换预检测",
+			"url": "http://join-activity.changyou.com/wechat/xtl/wxPointMall/exchangeGoodsCheck?goodsId=200",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "APP",
+					"value": "xtl",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "ACTIVITY",
+					"value": "tl_wxpoint_mall",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "VERSIONCODE",
+					"value": "20180910",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "User-Agent",
+					"value": "MicroMessenger",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "goodsId",
+					"value": "200",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": [],
+			"folder": "6f6c0af9-c681-4025-a4eb-dcdd20ae7b99",
+			"headers": "APP: xtl\nACTIVITY: tl_wxpoint_mall\nVERSIONCODE: 20180910\nUser-Agent: MicroMessenger\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "debc4a72-54f8-4e92-9bda-ec06b08960b1",
+			"name": "登录检测",
+			"url": "http://tlh5.changyou.com/servlet/IsLoginAction.ncdo",
+			"description": "",
+			"data": [
+				{
+					"key": "id",
+					"value": "1001801",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "0f9646f7-d36d-462d-977a-cd51b346a31d",
+			"headers": "",
+			"pathVariables": {}
+		}
+	]
+}

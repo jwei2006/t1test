@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        input {
+            width:80%;
+            height: 30px;
+        }
+        button {
+            width:100px;
+            height:30px;
+        }
+        form span{
+            display: none;
+            width:20px;
+            height:20px;
+            border:1px solid gray;
+            line-height:20px;
+            margin: 5px 10px;
+            text-align:center;
+            cursor:pointer;
+        }
+        .aladd {
+            display:inline-block;
+            visibility: hidden;
+        }
+        .min {
+            display: inline-block;
+        }
+        .header p:last-child .add {
+            display: inline-block;
+        }
+        .body p:last-child .add {
+            display: inline-block;
+        }
+        .mask {
+            position:absolute;
+            top: 0;
+            width:100%;
+            height:100%;
+            background-color: rgba(230, 230, 230, 0.7);
+        }
+        .addName {
+            position:absolute;
+            left:50%;
+            top:50%;
+            width:400px;
+            height:100px;
+            margin-left: -200px;
+            margin-top:-50px;
+        }
+        .mask span {
+            position:absolute;
+            left:50%;
+            margin-left: -25px;
+            width:50px;
+            height:20px;
+            border: 1px solid gray;
+            text-align: center;
+            line-height: 20px;
+            cursor:pointer;
+        }
+        .addbtn {
+            top: 60%;
+        }
+        .cancelbtn {
+            top: 66%;
+        }
+    </style>
+    <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <form action="/result" method="post">
+        请求方式：
+        <p><input name="method" type="text" placeholder="请输入：method"/></p>
+        请求URL：
+        <p><input name="url" type="text" placeholder="请输入：url"/></p>
+        请求头：<span class="aladd headAdd">+</span>
+        <div class = "header">
+            <p><span class = "min">-</span><input name="header-APP" type="text" placeholder="请输入：APP"/><span class="add">+</span></p>
+            <p><span class = "min">-</span><input name="header-ACTIVITY" type="text" placeholder="请输入：ACTIVITY"/><span class="add">+</span></p>
+            <p><span class = "min">-</span><input name="header-VERSIONCODE" type="text" placeholder="请输入：VERSIONCODE"/><span class = "add">+</span></p>
+        </div>
+        请求体：<span class="aladd bodyAdd">+</span>
+        <div class="body">
+            <p><span class = "min">-</span><input name="body-openId" type="text" placeholder="请输入：openId"/><span class="add">+</span></p>
+        </div>
+        <button>run</button>
+    </form>
+    <div class="mask" style = "display: none;">
+        <input type="text" class = "addName" placeholder="输入添加的名">
+        <span class="addbtn">确定</span>
+        <span class="cancelbtn">取消</span>
+    </div>
+    <script>
+
+        (function () {
+            document.body.width = window.innerWidth ;
+            document.body.height = window.innerHeight ;
+        })()
+            var oForm = document.getElementsByTagName("form")[0];
+            var addbtn = document.getElementsByClassName("addbtn")[0];
+            var cancelbtn = document.getElementsByClassName("cancelbtn")[0];
+            var oDom;
+            function insertAfter (newElement, tarElement) {
+                var parent = tarElement.parentNode;
+                if (parent.lastChild == tarElement) {
+                    parent.appendChild(newElement);
+                } else {
+                    parent.insertBefore(newElement, tarElement.nextSibling);
+                }
+            }
+            function addFn (dom) {
+                if (dom.className == "header") {
+                    var _name = "header-" + document.getElementsByClassName("addName")[0].value,
+                        name = document.getElementsByClassName("addName")[0].value
+                }else if (dom.className == "body") {
+                    var _name = "body-" + document.getElementsByClassName("addName")[0].value,
+                        name = document.getElementsByClassName("addName")[0].value
+                }
+                    var newP = document.createElement("p")
+                    var spanMin = document.createElement("span");
+                    spanMin.className = "min";
+                    spanMin.innerText = "-"
+                    var input = document.createElement("input");
+                    input.name = _name;
+                    input.placeholder = "请输入：" + name;
+                    var spanAdd = document.createElement("span")
+                    spanAdd.className = "add";
+                    spanAdd.innerText = "+"
+                    newP.appendChild(spanMin);
+                    newP.appendChild(input);
+                    newP.appendChild(spanAdd);
+                    dom.appendChild(newP);
+                    dom.previousElementSibling.style.visibility = "hidden";
+            };
+            addbtn.onclick = function (e) {
+                var event = e || window.event;
+                addFn(oDom);
+                oDom = null;
+                document.getElementsByClassName("mask")[0].style.display = "none";
+            };
+            oForm.onclick = function (e) {
+                var event = e || window.event;
+                var target = event.target || event.srcElement;
+                if (target && target.className.toLowerCase() === "min") {
+                    var oDiv = target.parentNode.parentNode;
+
+                    if (oDiv.children.length === 1) {
+                        oDiv.previousElementSibling.style.visibility = "visible";
+                    }
+                    oDiv.removeChild(target.parentNode);
+
+                }else if (target && target.className.toLowerCase() === "add") {
+                    document.getElementsByClassName("mask")[0].style.display = "block";
+                    oDom = target.parentNode.parentNode;
+                }else if (target && (target.className.toLowerCase() === "aladd headadd" || target.className.toLowerCase() === "aladd bodyadd")) {
+                    document.getElementsByClassName("mask")[0].style.display = "block";
+                    oDom = target.nextElementSibling;
+                }
+            }
+            cancelbtn.onclick = function () {
+                document.getElementsByClassName("mask")[0].style.display = "none";
+            }
+            console.log(jQuery)
+    </script>
+</body>
+</html>
